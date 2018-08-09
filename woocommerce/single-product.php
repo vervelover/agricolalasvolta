@@ -49,12 +49,17 @@ function ap_update_woo_flexslider_options( $options ) {
     return $options;
 }
 
-// /* Share icons on product */
-//
-// add_action('woocommerce_share', 'ap_add_social_buttons' );
-// function ap_add_social_buttons() {
-//     genesis_share_icon_output( 'header', array(  'facebook', 'googlePlus', 'pinterest' ) );
-// }
+remove_action( 'business_page_header', 'business_page_title', 10 );
+add_action( 'woocommerce_single_product_summary', 'genesis_do_post_title', 5 );
+
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_rating', 10 );
+
+/* Share icons on product */
+
+add_action('woocommerce_share', 'ap_add_social_buttons' );
+function ap_add_social_buttons() {
+    genesis_share_icon_output( 'header', array(  'facebook', 'googlePlus', 'pinterest' ) );
+}
 
 add_action( 'genesis_loop', 'gencwooc_single_product_loop' );
 /**

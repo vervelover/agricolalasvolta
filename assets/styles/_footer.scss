@@ -3,7 +3,7 @@
 
 .site-footer {
     background-color: $dark;
-    color: $medium;
+    color: $light;
     position: relative;
     >.wrap {
         padding: 0 5vw 5vw;
@@ -17,11 +17,15 @@
             max-width: calc(100% - 4rem);
         }
     }
+    p {
+        color: $light;
+    }
     a {
         color: $light;
         text-decoration: none;
         &:hover {
             color: $white;
+            text-decoration: underline;
         }
     }
     .back-to-top {

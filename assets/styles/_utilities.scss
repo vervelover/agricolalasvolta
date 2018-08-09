@@ -19,22 +19,24 @@ $breakpoints: (
 /* ### Colors */
 
 /** palette here:
-http://paletton.com/#uid=10+0u0k8jax00pSjdmWlZ2Zk11g */
+http://paletton.com/palette.php?uid=2100u0kfqdzaHoX4Ev-uQ47Ti1y */
 
-$accent:  #b79449;
-$black:   #0a0804;
-$dark:    #181307;
-$gray:    #544d3e;
-$medium:  rgba( $gray, 0.7 );
-$border:  rgba( $gray, 0.5 );
-$light:   #cecece;
+$accent:  #5F6887;
+$black:   #0C0800;
+$dark:    #211701;
+$gray:    #6C5C38;
+$medium:  #C7B284;
+$border:  #cfad45;
+$light:   #FCF0D7;
 $white:   #ffffff;
 $overlay: rgba(0, 0, 0, .1);
 
 /* ### Typography */
 
-$font-heading: 'Walter Turncoat', cursive;
-$font-body:    'Muli', sans-serif;
+$font-special: 'lemonmilkregular', sans-serif;
+$font-heading: 'Patrick Hand', cursive;
+// $font-body:    'Muli', sans-serif;
+$font-body:    'EB Garamond', serif;
 $thin:		   300;
 $normal:  	   400;
 $bolder:  	   600;
@@ -42,7 +44,7 @@ $bold:    	   700;
 
 /* ### Other */
 
-$site-radius:     2px;
+$site-radius:     4px;
 $site-border:     2px solid $border;
 $site-transition: 0.75s cubic-bezier(0, 1, 0.5, 1);
 $heading-shadow:  0 1rem 2rem rgba(0, 0, 0, 0.4);

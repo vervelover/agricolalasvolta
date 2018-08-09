@@ -7,6 +7,10 @@
             float: left;
         }
         .summary {
+            .entry-title {
+                font-family: $font-special;
+                font-size: 3.5rem;
+            }
             p {
                 color: $gray;
                 margin-bottom: 1rem;

@@ -5,14 +5,14 @@
     position: absolute;
     width: 100%;
     z-index: 100;
-    background-color: $black;
+    background-color: $gray;
     @include transition;
     .has-fixed-header & {
         position: fixed;
         top: 0;
         left: 0;
         &.shrink {
-            background-color: $black;
+            background-color: $gray;
             box-shadow: 0 0 2rem rgba($dark,0.2);
         }
     }
@@ -70,12 +70,13 @@
 }
 
 .site-title {
-    font-size: 1.7rem;
-    font-family: $font-heading;
-    font-weight: $bold;
+    font-size: 3.2rem;
+    font-family: $font-special;
+    font-weight: $normal;
     line-height: 1;
     margin-bottom: 0;
-    white-space: nowrap;
+    white-space: pre-wrap;
+    width: 170px;
     a {
         color: $white;
         text-decoration: none;

@@ -358,7 +358,7 @@ gulp.task('watch', function () {
 	 * certificate on your local development environment.
 	 */
 	 browsersync( {
-	     proxy: 'localhost/business-pro-base'
+	     proxy: 'localhost/agricola-la-svolta'
 	 } );
 
 	// Run tasks when files change.

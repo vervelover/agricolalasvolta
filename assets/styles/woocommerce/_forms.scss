@@ -26,7 +26,7 @@
             @include transition;
             box-shadow: inset 0 0 0 9rem rgba($white, 0.1), 0 1.25rem 1rem -0.5rem rgba($dark, 0.146);
             color: $white;
-            background-color: $accent;
+            background-color: $border;
         }
         &.disabled,
         &:disabled,
@@ -38,7 +38,7 @@
             font-size: 1.4rem;
             background-color: $accent;
             &:hover {
-                background-color: $accent;
+                background-color: $border;
             }
         }
     }

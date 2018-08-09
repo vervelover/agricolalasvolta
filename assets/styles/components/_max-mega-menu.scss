@@ -278,18 +278,18 @@
   text-align: center;
   width: auto;
   display: block;
-  color: $light;
   text-decoration: none;
   -webkit-border-radius: 0px 0px 0px 0px;
   -moz-border-radius: 0px 0px 0px 0px;
   -ms-border-radius: 0px 0px 0px 0px;
   -o-border-radius: 0px 0px 0px 0px;
   border-radius: 0px 0px 0px 0px;
-  font-family: inherit;
+  font-family: $font-heading;
   font-size: 2.5rem;
-  letter-spacing: -1px;
+  letter-spacing: 4px;
+  color: $light;
   @include breakpoint(md) {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
   }
 }
 @media only screen and (min-width: 57em) {

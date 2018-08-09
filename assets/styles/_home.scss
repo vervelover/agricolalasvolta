@@ -5,6 +5,17 @@
     .site-inner {
         padding: 0;
     }
+    .site-header {
+        background-color: transparent;
+        .site-title a {
+            text-shadow: $heading-shadow;
+        }
+        &.shrink {
+            .site-title a {
+                text-shadow: none;
+            }
+        }
+    }
 }
 
 .front-page-1,
@@ -62,6 +73,9 @@
         }
     }
     h1 {
+        margin-bottom: 2rem;
+        text-shadow: $heading-shadow;
+
         @include breakpoint(xs) {
             font-size: 2.2em;
         }
@@ -70,6 +84,14 @@
         }
         @include breakpoint(xl) {
             font-size: 3.5em;
+        }
+    }
+    .button.accent {
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        box-shadow: .2rem .2rem 2rem $dark;
+        &:hover {
+            background-color: $border;
         }
     }
 }
