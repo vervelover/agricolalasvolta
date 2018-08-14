@@ -29,12 +29,13 @@ $medium:  #C7B284;
 $border:  #cfad45;
 $light:   #FCF0D7;
 $white:   #ffffff;
+$background: #dcd9d3;
 $overlay: rgba(0, 0, 0, .1);
 
 /* ### Typography */
 
 $font-special: 'lemonmilkregular', sans-serif;
-$font-heading: 'Patrick Hand', cursive;
+$font-heading: 'troupers_capitalsregular', cursive;
 // $font-body:    'Muli', sans-serif;
 $font-body:    'EB Garamond', serif;
 $thin:		   300;
@@ -53,7 +54,7 @@ $lighter-shadow:  0 0.5rem 2rem rgba(0, 0, 0, .2);
 /* ### Column widths */
 
 // DO NOT USE REM for margin-left
-$margin-left:   10px;
+$margin-left:   30px;
 
 $one-half :     calc((100% - #{$margin-left}) / 2);
 $one-third:     calc((100% - 2 * #{$margin-left}) / 3);

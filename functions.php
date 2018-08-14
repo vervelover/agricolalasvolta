@@ -22,7 +22,7 @@ include_once (get_template_directory().'/lib/init.php');
 // Define theme constants.
 define('CHILD_THEME_NAME', 'Business Pro Theme');
 define('CHILD_THEME_URL', 'https://seothemes.com/themes/business-pro');
-define('CHILD_THEME_VERSION', '1.0.5.2018-08-08-a01' . time());
+define('CHILD_THEME_VERSION', '1.0.5.2018-08-08-a01'.time());
 
 // Set Localization (do not remove).
 load_child_theme_textdomain('business-pro-theme', apply_filters('child_theme_textdomain', get_stylesheet_directory().'/languages', 'business-pro-theme'));
@@ -65,7 +65,7 @@ add_theme_support('genesis-accessibility', array(
 	));
 
 // Reinstate Genesis Featured Products widget after 1.0 update
-add_theme_support( 'gencwooc-featured-products-widget' );
+add_theme_support('gencwooc-featured-products-widget');
 
 // Enable custom navigation menus.
 add_theme_support('genesis-menus', array(
@@ -193,7 +193,7 @@ function business_scripts_styles() {
 	wp_dequeue_style('woocommerce-layout');
 
 	// Enqueue Google fonts.
-	wp_enqueue_style('google-fonts', '//fonts.googleapis.com/css?family=Muli:300,400,600,700|Patrick+Hand|EB+Garamond:400,600,700', array(), CHILD_THEME_VERSION);
+	wp_enqueue_style('google-fonts', '//fonts.googleapis.com/css?family=Muli:300,400,600,700|EB+Garamond:400,600,700', array(), CHILD_THEME_VERSION);
 
 	// Get Icon Widget plugin settings.
 	$icon_settings = get_option('icon_widget_settings');
@@ -218,8 +218,8 @@ function business_scripts_styles() {
 	wp_enqueue_script('business-pro-theme', get_stylesheet_directory_uri().'/assets/scripts/min/business-pro.min.js', array('jquery'), CHILD_THEME_VERSION, true);
 
 	// Enqueue page-header margin-top js fix
-	if ( !is_front_page() ) {
-		wp_enqueue_script( 'header-height', get_bloginfo( 'stylesheet_directory' ) . '/assets/scripts/min/header-height.min.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
+	if (!is_front_page()) {
+		wp_enqueue_script('header-height', get_bloginfo('stylesheet_directory').'/assets/scripts/min/header-height.min.js', array('jquery'), CHILD_THEME_VERSION, true);
 	}
 
 	// Enqueue responsive menu script.
@@ -269,13 +269,13 @@ add_filter('woocommerce_style_smallscreen_breakpoint', 'ap_filter_woocommerce_st
 
 /* Gallery Thumbnails Sizes */
 
-add_filter( 'woocommerce_get_image_size_gallery_thumbnail', function( $size ) {
-	return array(
-		'width' => 206,
-		'height' => 206,
-		'crop' => 1,
+add_filter('woocommerce_get_image_size_gallery_thumbnail', function ($size) {
+		return array(
+			'width'  => 206,
+			'height' => 206,
+			'crop'   => 1,
 		);
-} );
+	});
 
 // Customize Footer Text
 
@@ -283,8 +283,8 @@ remove_action('genesis_footer', 'genesis_do_footer');
 add_action('genesis_footer', 'ap_custom_footer');
 function ap_custom_footer() {
 	?>
-			<p><a href="<?php site_url(); ?>">Manfredi Style</a> &copy;
-		 Copyright <?php echo date('Y');
-	?> Manfredi Style Singapore Pte. Ltd. (Holding Company) Reg 201610326W / International Visionary Excellence Srl - P.Iva: 02329120972</p>
+				<p><a href="<?php site_url();?>">Manfredi Style</a> &copy;
+			 Copyright <?php echo date('Y');
+	?>Manfredi Style Singapore Pte. Ltd. (Holding Company) Reg 201610326W / International Visionary Excellence Srl - P.Iva: 02329120972</p>
 	<?php
 }

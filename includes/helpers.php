@@ -169,7 +169,11 @@ function business_custom_header() {
  		add_filter( 'body_class', 'ap_no_header_image_body_class' );
  		return;
 
- 	} elseif ( is_singular('creator') ) {
+ 	} elseif ( is_product() ) {
+
+		return;
+
+	} elseif ( is_singular('creator') ) {
 
  		add_filter( 'body_class', 'ap_no_header_image_body_class' );
 		return;

@@ -210,4 +210,7 @@
         max-width: map-get($breakpoints,sm);
         margin: 0 auto;
     }
+    .single-product & {
+        padding: 0;
+    }
 }

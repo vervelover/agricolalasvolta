@@ -360,7 +360,7 @@ http://paletton.com/palette.php?uid=2100u0kfqdzaHoX4Ev-uQ47Ti1y */
 
 .woocommerce ul.products .entry,
 .woocommerce-page ul.products .entry {
-	margin-left: 10px;
+	margin-left: 30px;
 }
 
 .woocommerce ul.products li.first,
@@ -382,26 +382,26 @@ http://paletton.com/palette.php?uid=2100u0kfqdzaHoX4Ev-uQ47Ti1y */
 
 .woocommerce ul.products.columns-2 li.product,
 .woocommerce-page ul.products.columns-2 li.product {
-	width: -webkit-calc((100% - 10px) / 2);
-	width:         calc((100% - 10px) / 2);
+	width: -webkit-calc((100% - 30px) / 2);
+	width:         calc((100% - 30px) / 2);
 }
 
 .woocommerce ul.products.columns-3 li.product,
 .woocommerce-page ul.products.columns-3 li.product {
-	width: -webkit-calc((100% - 2 * 10px) / 3);
-	width:         calc((100% - 2 * 10px) / 3);
+	width: -webkit-calc((100% - 2 * 30px) / 3);
+	width:         calc((100% - 2 * 30px) / 3);
 }
 
 .woocommerce ul.products.columns-5 li.product,
 .woocommerce-page ul.products.columns-5 li.product {
-	width: -webkit-calc((100% - 4 * 10px) / 5);
-	width:         calc((100% - 4 * 10px) / 5);
+	width: -webkit-calc((100% - 4 * 30px) / 5);
+	width:         calc((100% - 4 * 30px) / 5);
 }
 
 .woocommerce ul.products.columns-6 li.product,
 .woocommerce-page ul.products.columns-6 li.product {
-	width: -webkit-calc((100% - 4 * 10px) / 5);
-	width:         calc((100% - 4 * 10px) / 5);
+	width: -webkit-calc((100% - 4 * 30px) / 5);
+	width:         calc((100% - 4 * 30px) / 5);
 }
 
 .woocommerce.columns-1 ul.products li.product,
@@ -412,26 +412,26 @@ http://paletton.com/palette.php?uid=2100u0kfqdzaHoX4Ev-uQ47Ti1y */
 
 .woocommerce.columns-2 ul.products li.product,
 .woocommerce-page.columns-2 ul.products li.product {
-	width: -webkit-calc((100% - 10px) / 2);
-	width:         calc((100% - 10px) / 2);
+	width: -webkit-calc((100% - 30px) / 2);
+	width:         calc((100% - 30px) / 2);
 }
 
 .woocommerce.columns-3 ul.products li.product,
 .woocommerce-page.columns-3 ul.products li.product {
-	width: -webkit-calc((100% - 2 * 10px) / 3);
-	width:         calc((100% - 2 * 10px) / 3);
+	width: -webkit-calc((100% - 2 * 30px) / 3);
+	width:         calc((100% - 2 * 30px) / 3);
 }
 
 .woocommerce.columns-5 ul.products li.product,
 .woocommerce-page.columns-5 ul.products li.product {
-	width: -webkit-calc((100% - 4 * 10px) / 5);
-	width:         calc((100% - 4 * 10px) / 5);
+	width: -webkit-calc((100% - 4 * 30px) / 5);
+	width:         calc((100% - 4 * 30px) / 5);
 }
 
 .woocommerce.columns-6 ul.products li.product,
 .woocommerce-page.columns-6 ul.products li.product {
-	width: -webkit-calc((100% - 4 * 10px) / 5);
-	width:         calc((100% - 4 * 10px) / 5);
+	width: -webkit-calc((100% - 4 * 30px) / 5);
+	width:         calc((100% - 4 * 30px) / 5);
 }
 
 .woocommerce .woocommerce-result-count,
@@ -918,6 +918,7 @@ body .woocommerce ul.products[class*='columns-'] li.product,
 }
 
 .woocommerce .woocommerce-ordering {
+	display: none;
 	width: auto;
 	float: left;
 	clear: left;
@@ -1075,7 +1076,7 @@ body .woocommerce ul.products[class*='columns-'] li.product,
 
 .woocommerce .woocommerce-pagination .page-numbers {
 	border: none;
-	font-family: 'Patrick Hand', cursive;
+	font-family: 'troupers_capitalsregular', cursive;
 	font-size: 24px;
 	font-size: 1.5rem;
 }
@@ -1138,19 +1139,21 @@ body .woocommerce ul.products[class*='columns-'] li.product,
 
 .woocommerce div.product p.price,
 .woocommerce div.product span.price {
-	font-family: 'Patrick Hand', cursive;
-	font-size: 2em;
+	font-family: 'EB Garamond', serif;
+	font-size: 1.4em;
 	margin-bottom: 16px;
 	margin-bottom: 1rem;
-	color: #5f6887;
+	color: #6c5c38;
 	line-height: 1.5;
 	float: left;
 	width: 100%;
 }
 
 .woocommerce div.product .product_meta {
-	font-size: 24px;
-	font-size: 1.5rem;
+	font-size: 28.8px;
+	font-size: 1.8rem;
+	margin-bottom: 16px;
+	margin-bottom: 1rem;
 	color: #6c5c38;
 }
 
@@ -1216,7 +1219,7 @@ body .woocommerce ul.products[class*='columns-'] li.product,
 }
 
 .woocommerce div.product .woocommerce-tabs ul.tabs li a {
-	font-family: 'Patrick Hand', cursive;
+	font-family: 'troupers_capitalsregular', cursive;
 	font-size: 28.8px;
 	font-size: 1.8rem;
 	letter-spacing: 0.05em;
@@ -1473,7 +1476,7 @@ body .woocommerce ul.products[class*='columns-'] li.product,
 	border-radius: 4px;
 	color: #ffffff;
 	cursor: pointer;
-	font-weight: 700;
+	font-weight: 400;
 	font-size: 24px;
 	font-size: 1.5rem;
 	padding: 1.2em 2.2em;
@@ -1673,7 +1676,7 @@ body .woocommerce ul.products[class*='columns-'] li.product,
 	text-decoration: none;
 	font-size: 22.4px;
 	font-size: 1.4rem;
-	font-family: 'Patrick Hand', cursive;
+	font-family: 'troupers_capitalsregular', cursive;
 }
 
 .content-sidebar.woocommerce-account .woocommerce-MyAccount-navigation,
@@ -1741,7 +1744,7 @@ body .woocommerce ul.products[class*='columns-'] li.product,
 }
 
 .woocommerce .comment-reply-title {
-	font-family: 'Patrick Hand', cursive;
+	font-family: 'EB Garamond', serif;
 	font-size: 32px;
 	font-size: 2rem;
 	padding: 0 0 1em;
@@ -1767,8 +1770,8 @@ body .woocommerce ul.products[class*='columns-'] li.product,
 .woocommerce-message,
 .woocommerce-error,
 .woocommerce-info {
-	font-size: 28.8px;
-	font-size: 1.8rem;
+	font-size: 32px;
+	font-size: 2rem;
 	background-color: #fcf0d7;
 	border-top-color: #6c5c38;
 }
@@ -1934,8 +1937,8 @@ div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricte
 @media (min-width: 32em) {
 	body .woocommerce ul.products[class*='columns-'] li.product,
 	.woocommerce-page ul.products[class*='columns-'] li.product {
-		width: -webkit-calc((100% - 10px) / 2);
-		width:         calc((100% - 10px) / 2);
+		width: -webkit-calc((100% - 30px) / 2);
+		width:         calc((100% - 30px) / 2);
 	}
 	.woocommerce .woocommerce-ordering {
 		float: right;
@@ -1948,8 +1951,8 @@ div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricte
 @media (min-width: 48em) {
 	body .woocommerce ul.products[class*='columns-'] li.product,
 	.woocommerce-page ul.products[class*='columns-'] li.product {
-		width: -webkit-calc((100% - 3 * 10px) / 4);
-		width:         calc((100% - 3 * 10px) / 4);
+		width: -webkit-calc((100% - 3 * 30px) / 4);
+		width:         calc((100% - 3 * 30px) / 4);
 	}
 	.site-header .fa-shopping-cart {
 		margin-right: 2em;

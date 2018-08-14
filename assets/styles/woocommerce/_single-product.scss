@@ -22,16 +22,17 @@
         }
         p.price,
         span.price {
-            font-family: $font-heading;
-            font-size: 2em;
+            font-family: $font-body;
+            font-size: 1.4em;
             margin-bottom: 1rem;
-            color: $accent;
+            color: $gray;
             line-height: 1.5;
             float: left;
             width: 100%;
         }
         .product_meta {
-            font-size: 1.5rem;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
             color: $gray;
         }
         form.cart {
