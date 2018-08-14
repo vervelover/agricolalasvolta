@@ -36,16 +36,16 @@ $overlay: rgba(0, 0, 0, .1);
 
 $font-special: 'lemonmilkregular', sans-serif;
 $font-heading: 'troupers_capitalsregular', cursive;
-// $font-body:    'Muli', sans-serif;
-$font-body:    'EB Garamond', serif;
+$font-body:    'Lato', sans-serif;
+// $font-body:    'EB Garamond', serif;
 $thin:		   300;
 $normal:  	   400;
-$bolder:  	   600;
-$bold:    	   700;
+$bolder:  	   700;
+$bold:    	   900;
 
 /* ### Other */
 
-$site-radius:     4px;
+$site-radius:     2px;
 $site-border:     2px solid $border;
 $site-transition: 0.75s cubic-bezier(0, 1, 0.5, 1);
 $heading-shadow:  0 1rem 2rem rgba(0, 0, 0, 0.4);

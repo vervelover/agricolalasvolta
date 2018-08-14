@@ -61,8 +61,8 @@ body {
 
 body>div {
     font-size: 1.8rem;
-    @include breakpoint(sm) {
-        font-size: 2.2rem;
+    @include breakpoint(xl) {
+        font-size: 2rem;
     }
 }
 
@@ -228,8 +228,8 @@ input[type="submit"] {
     border-radius: $site-radius;
     color: $white;
     cursor: pointer;
-    font-family: $font-special;
-    text-transform: capitalize;
+    font-family: $font-body;
+    text-transform: uppercase;
     font-size: 1.5rem;
     font-weight: $normal;
     padding: 1.2em 2.2em;
