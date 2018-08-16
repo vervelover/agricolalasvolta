@@ -4229,7 +4229,7 @@ a.flex-prev::before {
 }
 
 .portfolio-sizer {
-	width: 30px;
+	width: 15px;
 }
 
 .portfolio-item {
@@ -4461,7 +4461,7 @@ a.flex-prev::before {
 .columns div {
 	background-color: #fcf0d7;
 	border-radius: 2px;
-	margin-bottom: 30px;
+	margin-bottom: 15px;
 	text-align: center;
 	text-transform: capitalize;
 	font-size: 11.2px;
@@ -4657,9 +4657,9 @@ a.flex-prev::before {
 		clear: none;
 	}
 	.gallery-item {
-		width: -webkit-calc((100% - 30px) / 2);
-		width:         calc((100% - 30px) / 2);
-		margin-bottom: 30px;
+		width: -webkit-calc((100% - 15px) / 2);
+		width:         calc((100% - 15px) / 2);
+		margin-bottom: 15px;
 	}
 	.woocommerce-demo-store .menu-toggle {
 		top: 42px;
@@ -4735,59 +4735,59 @@ a.flex-prev::before {
 	.four-sixths,
 	.five-sixths {
 		float: left;
-		margin-left: 30px;
+		margin-left: 15px;
 	}
 	.one-half,
 	.three-sixths,
 	.two-fourths {
-		width: -webkit-calc((100% - 30px) / 2);
-		width:         calc((100% - 30px) / 2);
+		width: -webkit-calc((100% - 15px) / 2);
+		width:         calc((100% - 15px) / 2);
 	}
 	.one-third,
 	.two-sixths,
 	.gallery-columns-3 .gallery-item {
-		width: -webkit-calc((100% - 2 * 30px) / 3);
-		width:         calc((100% - 2 * 30px) / 3);
+		width: -webkit-calc((100% - 2 * 15px) / 3);
+		width:         calc((100% - 2 * 15px) / 3);
 	}
 	.four-sixths,
 	.two-thirds {
-		width: -webkit-calc(2 * ((100% - 2 * 30px) / 3) + 30px);
-		width:         calc(2 * ((100% - 2 * 30px) / 3) + 30px);
+		width: -webkit-calc(2 * ((100% - 2 * 15px) / 3) + 15px);
+		width:         calc(2 * ((100% - 2 * 15px) / 3) + 15px);
 	}
 	.one-fourth,
 	.gallery-columns-4 .gallery-item {
-		width: -webkit-calc((100% - 3 * 30px) / 4);
-		width:         calc((100% - 3 * 30px) / 4);
+		width: -webkit-calc((100% - 3 * 15px) / 4);
+		width:         calc((100% - 3 * 15px) / 4);
 	}
 	.three-fourths {
-		width: -webkit-calc(3 * ((100% - 3 * 30px) / 4) + 2 * 30px);
-		width:         calc(3 * ((100% - 3 * 30px) / 4) + 2 * 30px);
+		width: -webkit-calc(3 * ((100% - 3 * 15px) / 4) + 2 * 15px);
+		width:         calc(3 * ((100% - 3 * 15px) / 4) + 2 * 15px);
 	}
 	.one-fifth,
 	.gallery-columns-5 .gallery-item {
-		width: -webkit-calc((100% - 4 * 30px) / 5);
-		width:         calc((100% - 4 * 30px) / 5);
+		width: -webkit-calc((100% - 4 * 15px) / 5);
+		width:         calc((100% - 4 * 15px) / 5);
 	}
 	.two-fifths {
-		width: -webkit-calc(2 * ((100% - 4 * 30px) / 5) + 30px);
-		width:         calc(2 * ((100% - 4 * 30px) / 5) + 30px);
+		width: -webkit-calc(2 * ((100% - 4 * 15px) / 5) + 15px);
+		width:         calc(2 * ((100% - 4 * 15px) / 5) + 15px);
 	}
 	.three-fifths {
-		width: -webkit-calc(3 * ((100% - 4 * 30px) / 5) + 2 * 30px);
-		width:         calc(3 * ((100% - 4 * 30px) / 5) + 2 * 30px);
+		width: -webkit-calc(3 * ((100% - 4 * 15px) / 5) + 2 * 15px);
+		width:         calc(3 * ((100% - 4 * 15px) / 5) + 2 * 15px);
 	}
 	.four-fifths {
-		width: -webkit-calc(4 * ((100% - 4 * 30px) / 5) + 3 * 30px);
-		width:         calc(4 * ((100% - 4 * 30px) / 5) + 3 * 30px);
+		width: -webkit-calc(4 * ((100% - 4 * 15px) / 5) + 3 * 15px);
+		width:         calc(4 * ((100% - 4 * 15px) / 5) + 3 * 15px);
 	}
 	.one-sixth,
 	.gallery-columns-6 .gallery-item {
-		width: -webkit-calc((100% - 5 * 30px) / 6);
-		width:         calc((100% - 5 * 30px) / 6);
+		width: -webkit-calc((100% - 5 * 15px) / 6);
+		width:         calc((100% - 5 * 15px) / 6);
 	}
 	.five-sixths {
-		width: -webkit-calc(5 * ((100% - 5 * 30px) / 6) + 4 * 30px);
-		width:         calc(5 * ((100% - 5 * 30px) / 6) + 4 * 30px);
+		width: -webkit-calc(5 * ((100% - 5 * 15px) / 6) + 4 * 15px);
+		width:         calc(5 * ((100% - 5 * 15px) / 6) + 4 * 15px);
 	}
 	.first {
 		clear: both;
@@ -4904,7 +4904,7 @@ a.flex-prev::before {
 		margin-bottom: 0;
 	}
 	.front-page-3 .widget {
-		margin-bottom: 30px;
+		margin-bottom: 15px;
 	}
 	.front-page-4 .wrap {
 		display: block;
@@ -5842,9 +5842,9 @@ a.flex-prev::before {
 
 @media (max-width: 48em) {
 	.front-page-5 .listing-item {
-		margin: 0 0 3rem 30px;
-		width: -webkit-calc((100% - 30px) / 2);
-		width:         calc((100% - 30px) / 2);
+		margin: 0 0 3rem 15px;
+		width: -webkit-calc((100% - 15px) / 2);
+		width:         calc((100% - 15px) / 2);
 	}
 	.front-page-5 .listing-item:nth-of-type(2n + 1) {
 		margin-left: 0;

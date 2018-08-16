@@ -54,7 +54,7 @@ $lighter-shadow:  0 0.5rem 2rem rgba(0, 0, 0, .2);
 /* ### Column widths */
 
 // DO NOT USE REM for margin-left
-$margin-left:   30px;
+$margin-left:   15px;
 
 $one-half :     calc((100% - #{$margin-left}) / 2);
 $one-third:     calc((100% - 2 * #{$margin-left}) / 3);

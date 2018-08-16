@@ -169,6 +169,13 @@ http://paletton.com/palette.php?uid=2100u0kfqdzaHoX4Ev-uQ47Ti1y */
 	float: left;
 }
 
+.woocommerce div.entry.product div.images .woocommerce-product-gallery__wrapper,
+.woocommerce #content div.product div.images .woocommerce-product-gallery__wrapper,
+.woocommerce-page div.entry.product div.images .woocommerce-product-gallery__wrapper,
+.woocommerce-page #content div.product div.images .woocommerce-product-gallery__wrapper {
+	max-width: 540px;
+}
+
 .woocommerce div.entry.product div.thumbnails,
 .woocommerce #content div.product div.thumbnails,
 .woocommerce-page div.entry.product div.thumbnails,
@@ -360,7 +367,7 @@ http://paletton.com/palette.php?uid=2100u0kfqdzaHoX4Ev-uQ47Ti1y */
 
 .woocommerce ul.products .entry,
 .woocommerce-page ul.products .entry {
-	margin-left: 30px;
+	margin-left: 15px;
 }
 
 .woocommerce ul.products li.first,
@@ -382,26 +389,26 @@ http://paletton.com/palette.php?uid=2100u0kfqdzaHoX4Ev-uQ47Ti1y */
 
 .woocommerce ul.products.columns-2 li.product,
 .woocommerce-page ul.products.columns-2 li.product {
-	width: -webkit-calc((100% - 30px) / 2);
-	width:         calc((100% - 30px) / 2);
+	width: -webkit-calc((100% - 15px) / 2);
+	width:         calc((100% - 15px) / 2);
 }
 
 .woocommerce ul.products.columns-3 li.product,
 .woocommerce-page ul.products.columns-3 li.product {
-	width: -webkit-calc((100% - 2 * 30px) / 3);
-	width:         calc((100% - 2 * 30px) / 3);
+	width: -webkit-calc((100% - 2 * 15px) / 3);
+	width:         calc((100% - 2 * 15px) / 3);
 }
 
 .woocommerce ul.products.columns-5 li.product,
 .woocommerce-page ul.products.columns-5 li.product {
-	width: -webkit-calc((100% - 4 * 30px) / 5);
-	width:         calc((100% - 4 * 30px) / 5);
+	width: -webkit-calc((100% - 4 * 15px) / 5);
+	width:         calc((100% - 4 * 15px) / 5);
 }
 
 .woocommerce ul.products.columns-6 li.product,
 .woocommerce-page ul.products.columns-6 li.product {
-	width: -webkit-calc((100% - 4 * 30px) / 5);
-	width:         calc((100% - 4 * 30px) / 5);
+	width: -webkit-calc((100% - 4 * 15px) / 5);
+	width:         calc((100% - 4 * 15px) / 5);
 }
 
 .woocommerce.columns-1 ul.products li.product,
@@ -412,26 +419,26 @@ http://paletton.com/palette.php?uid=2100u0kfqdzaHoX4Ev-uQ47Ti1y */
 
 .woocommerce.columns-2 ul.products li.product,
 .woocommerce-page.columns-2 ul.products li.product {
-	width: -webkit-calc((100% - 30px) / 2);
-	width:         calc((100% - 30px) / 2);
+	width: -webkit-calc((100% - 15px) / 2);
+	width:         calc((100% - 15px) / 2);
 }
 
 .woocommerce.columns-3 ul.products li.product,
 .woocommerce-page.columns-3 ul.products li.product {
-	width: -webkit-calc((100% - 2 * 30px) / 3);
-	width:         calc((100% - 2 * 30px) / 3);
+	width: -webkit-calc((100% - 2 * 15px) / 3);
+	width:         calc((100% - 2 * 15px) / 3);
 }
 
 .woocommerce.columns-5 ul.products li.product,
 .woocommerce-page.columns-5 ul.products li.product {
-	width: -webkit-calc((100% - 4 * 30px) / 5);
-	width:         calc((100% - 4 * 30px) / 5);
+	width: -webkit-calc((100% - 4 * 15px) / 5);
+	width:         calc((100% - 4 * 15px) / 5);
 }
 
 .woocommerce.columns-6 ul.products li.product,
 .woocommerce-page.columns-6 ul.products li.product {
-	width: -webkit-calc((100% - 4 * 30px) / 5);
-	width:         calc((100% - 4 * 30px) / 5);
+	width: -webkit-calc((100% - 4 * 15px) / 5);
+	width:         calc((100% - 4 * 15px) / 5);
 }
 
 .woocommerce .woocommerce-result-count,
@@ -983,7 +990,7 @@ body .woocommerce ul.products[class*='columns-'] li.product,
 }
 
 .woocommerce ul.products li.product:hover {
-	box-shadow: 0 2rem 2rem -1rem rgba(33, 23, 1, 0.1);
+	box-shadow: 0 2rem 2rem 1rem rgba(33, 23, 1, 0.3);
 }
 
 .woocommerce ul.products li.product:before,
@@ -1167,6 +1174,27 @@ body .woocommerce ul.products[class*='columns-'] li.product,
 
 .woocommerce div.product form.cart .variations {
 	table-layout: fixed;
+}
+
+.woocommerce div.product .related.products {
+	float: left;
+	display: block;
+}
+
+.woocommerce div.product .related.products li.product {
+	box-shadow: none;
+}
+
+.woocommerce div.product .related.products li.product:hover {
+	box-shadow: 0 2rem 2rem 1rem rgba(33, 23, 1, 0.3);
+	-webkit-transition: 0.75s cubic-bezier(0, 1, 0.5, 1);
+	        transition: 0.75s cubic-bezier(0, 1, 0.5, 1);
+}
+
+.woocommerce div.product .related.products h2:first-child {
+	text-align: center;
+	margin: 64px auto 96px;
+	margin: 4rem auto 6rem;
 }
 
 .woocommerce .woocommerce-result-count {
@@ -1940,8 +1968,8 @@ div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricte
 @media (min-width: 32em) {
 	body .woocommerce ul.products[class*='columns-'] li.product,
 	.woocommerce-page ul.products[class*='columns-'] li.product {
-		width: -webkit-calc((100% - 30px) / 2);
-		width:         calc((100% - 30px) / 2);
+		width: -webkit-calc((100% - 15px) / 2);
+		width:         calc((100% - 15px) / 2);
 	}
 	.woocommerce .woocommerce-ordering {
 		float: right;
@@ -1954,8 +1982,8 @@ div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricte
 @media (min-width: 48em) {
 	body .woocommerce ul.products[class*='columns-'] li.product,
 	.woocommerce-page ul.products[class*='columns-'] li.product {
-		width: -webkit-calc((100% - 3 * 30px) / 4);
-		width:         calc((100% - 3 * 30px) / 4);
+		width: -webkit-calc((100% - 3 * 15px) / 4);
+		width:         calc((100% - 3 * 15px) / 4);
 	}
 	.site-header .fa-shopping-cart {
 		margin-right: 2em;
@@ -1998,15 +2026,15 @@ div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricte
 	.woocommerce #content div.product div.images,
 	.woocommerce-page div.entry.product div.images,
 	.woocommerce-page #content div.product div.images {
-		max-width: 59%;
+		max-width: 38%;
 		margin-right: 6%;
 	}
 	.woocommerce div.entry.product div.summary,
 	.woocommerce #content div.product div.summary,
 	.woocommerce-page div.entry.product div.summary,
 	.woocommerce-page #content div.product div.summary {
-		width: 38rem;
-		max-width: 35%;
+		width: 58rem;
+		max-width: 50%;
 	}
 	.woocommerce-cart form.checkout .col2-set,
 	.woocommerce-checkout form.checkout .col2-set,
@@ -2039,7 +2067,7 @@ div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricte
 	.woocommerce #content div.product div.images,
 	.woocommerce-page div.entry.product div.images,
 	.woocommerce-page #content div.product div.images {
-		max-width: 56%;
+		max-width: 38%;
 		margin-right: 3%;
 		margin-left: 3%;
 	}
@@ -2049,7 +2077,7 @@ div.woocommerce-info.wc-memberships-restriction-message.wc-memberships-restricte
 	.woocommerce #content div.product div.images,
 	.woocommerce-page div.entry.product div.images,
 	.woocommerce-page #content div.product div.images {
-		max-width: 48%;
+		max-width: 38%;
 		margin-right: 8%;
 		margin-left: 5%;
 	}

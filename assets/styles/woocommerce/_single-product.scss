@@ -42,6 +42,21 @@
                 table-layout: fixed;
             }
         }
+        .related.products {
+            float: left;
+            display: block;
+            li.product {
+                box-shadow: none;
+                &:hover {
+                    box-shadow: 0 2rem 2rem 1rem rgba($dark,0.3);
+                    transition: $site-transition;
+                }
+            }
+            h2:first-child {
+                text-align: center;
+                margin: 4rem auto 6rem;
+            }
+        }
     }
     .woocommerce-result-count {
         margin: 0 auto;

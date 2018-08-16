@@ -53,18 +53,21 @@
 			width: 100%;
 			float: left;
 			@include breakpoint(md) {
-				max-width: 59%;
+				max-width: 38%;
 				margin-right: 6%;
 			}
 			@include breakpoint(lg) {
-				max-width: 56%;
+				max-width: 38%;
 				margin-right: 3%;
 				margin-left: 3%;
 			}
 			@include breakpoint(xl) {
-				max-width: 48%;
+				max-width: 38%;
 				margin-right: 8%;
 				margin-left: 5%;
+			}
+			.woocommerce-product-gallery__wrapper {
+				max-width: 540px;
 			}
 		}
 
@@ -118,8 +121,8 @@
 			width: 100%;
 			clear: none;
 			@include breakpoint(md) {
-				width: 38rem;
-				max-width: 35%;
+				width: 58rem;
+				max-width: 50%;
 			}
 		}
 

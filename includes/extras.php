@@ -343,36 +343,36 @@ function business_fixed_header( $attr ) {
 
 }
 
-add_action( 'genesis_after_content_sidebar_wrap', 'business_prev_next_post_nav_cpt', 99 );
-/**
- * Enable prev/next links in portfolio.
- *
- * @since  1.0.0
- *
- * @return void
- */
-function business_prev_next_post_nav_cpt() {
-
-	if ( ! is_singular( 'portfolio' ) && ! is_singular( 'product' ) ) {
-		return;
-	}
-
-	genesis_markup( array(
-		'html5'   => '<div %s><div class="wrap">',
-		'xhtml'   => '<div class="navigation">',
-		'context' => 'adjacent-entry-pagination',
-	) );
-
-		echo '<div class="pagination-previous alignleft">';
-			previous_post_link();
-		echo '</div>';
-		echo '<div class="pagination-next alignright">';
-			next_post_link();
-		echo '</div>';
-
-	echo '</div></div>';
-
-}
+// add_action( 'genesis_after_content_sidebar_wrap', 'business_prev_next_post_nav_cpt', 99 );
+// /**
+//  * Enable prev/next links in portfolio.
+//  *
+//  * @since  1.0.0
+//  *
+//  * @return void
+//  */
+// function business_prev_next_post_nav_cpt() {
+//
+// 	if ( ! is_singular( 'portfolio' ) && ! is_singular( 'product' ) ) {
+// 		return;
+// 	}
+//
+// 	genesis_markup( array(
+// 		'html5'   => '<div %s><div class="wrap">',
+// 		'xhtml'   => '<div class="navigation">',
+// 		'context' => 'adjacent-entry-pagination',
+// 	) );
+//
+// 		echo '<div class="pagination-previous alignleft">';
+// 			previous_post_link();
+// 		echo '</div>';
+// 		echo '<div class="pagination-next alignright">';
+// 			next_post_link();
+// 		echo '</div>';
+//
+// 	echo '</div></div>';
+//
+// }
 
 add_action( 'wp_head', 'business_simple_social_icons_css' );
 /**
