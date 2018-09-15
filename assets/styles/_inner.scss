@@ -4,125 +4,125 @@
 
 /* ### Portfolio */
 
-.portfolio {
-	width: 100%;
-	.filter {
-		font-family: $font-heading;
-		font-size: small;
-		font-weight: $bolder;
-		text-align: center;
-		display: block;
-		margin-bottom: 4rem;
-		.wrap {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-		}
-		a {
-			text-decoration: none;
-			margin: 0.5em;
-			padding: 0.5em;
-			display: block;
-			&.active {
-				color: $accent;
-			}
-		}
-	}
-}
+// .portfolio {
+// 	width: 100%;
+// 	.filter {
+// 		font-family: $font-heading;
+// 		font-size: small;
+// 		font-weight: $bolder;
+// 		text-align: center;
+// 		display: block;
+// 		margin-bottom: 4rem;
+// 		.wrap {
+// 			display: flex;
+// 			flex-wrap: wrap;
+// 			justify-content: center;
+// 		}
+// 		a {
+// 			text-decoration: none;
+// 			margin: 0.5em;
+// 			padding: 0.5em;
+// 			display: block;
+// 			&.active {
+// 				color: $accent;
+// 			}
+// 		}
+// 	}
+// }
 
-.portfolio-sizer {
-	width: $margin-left;
-}
+// .portfolio-sizer {
+// 	width: $margin-left;
+// }
 
-.portfolio-item {
-	width: 100%;
-	margin-bottom: 2rem;
-	box-shadow: 0 2rem 2rem -1rem rgba($dark,0.1);
-	border-radius: $site-radius;
-	@include overlay;
-	@include breakpoint(xs) {
-		width: calc(50% - 1rem);
-	}
-	@include breakpoint(md) {
-		width: calc(33.333333333% - 1.333333333rem);
-	}
-	&:before {
-		opacity: 0.1;
-		border-radius: $site-radius;
-		@include transition;
-	}
-	&:hover {
-		box-shadow: 0 2rem 2rem -1rem rgba($dark,0.3);
-		transition: box-shadow $site-transition, transform $site-transition;
-		&:before,
-		.entry-title {
-			opacity: 1;
-		}
-	}
-	a {
-		display: block;
-		position: relative;
-	}
-	img {
-		border-radius: $site-radius;
-	}
-	.entry-title {
-		text-align: center;
-		position: absolute;
-		font-family: $font-heading;
-		font-weight: $bolder;
-		font-size: 1.6rem;
-		color: $white;
-		height: 1em;
-		line-height: 1;
-		z-index: 2;
-		opacity: 0;
-		@include transition;
-		@include center;
-	}
-}
+// .portfolio-item {
+// 	width: 100%;
+// 	margin-bottom: 2rem;
+// 	box-shadow: 0 2rem 2rem -1rem rgba($dark,0.1);
+// 	border-radius: $site-radius;
+// 	@include overlay;
+// 	@include breakpoint(xs) {
+// 		width: calc(50% - 1rem);
+// 	}
+// 	@include breakpoint(md) {
+// 		width: calc(33.333333333% - 1.333333333rem);
+// 	}
+// 	&:before {
+// 		opacity: 0.1;
+// 		border-radius: $site-radius;
+// 		@include transition;
+// 	}
+// 	&:hover {
+// 		box-shadow: 0 2rem 2rem -1rem rgba($dark,0.3);
+// 		transition: box-shadow $site-transition, transform $site-transition;
+// 		&:before,
+// 		.entry-title {
+// 			opacity: 1;
+// 		}
+// 	}
+// 	a {
+// 		display: block;
+// 		position: relative;
+// 	}
+// 	img {
+// 		border-radius: $site-radius;
+// 	}
+// 	.entry-title {
+// 		text-align: center;
+// 		position: absolute;
+// 		font-family: $font-heading;
+// 		font-weight: $bolder;
+// 		font-size: 1.6rem;
+// 		color: $white;
+// 		height: 1em;
+// 		line-height: 1;
+// 		z-index: 2;
+// 		opacity: 0;
+// 		@include transition;
+// 		@include center;
+// 	}
+// }
 
-.archive.genesis-pro-portfolio .entry {
-	padding: 0;
-	@include overlay;
-	&:before {
-		opacity: 0.1;
-		border-radius: $site-radius;
-		@include transition;
-	}
-	&:hover {
-		box-shadow: 0 2rem 2rem -1rem rgba($dark,0.3);
-		transition: box-shadow $site-transition, transform $site-transition;
-		&:before,
-		.entry-title {
-			opacity: 1;
-		}
-		a {
-			color: $white;
-		}
-	}
-	a {
-		display: block;
-		position: relative;
-	}
-	img {
-		border-radius: $site-radius;
-	}
-	.entry-title {
-		text-align: center;
-		position: absolute;
-		font-family: $font-heading;
-		font-weight: $bolder;
-		font-size: 1.6rem;
-		color: $white;
-		height: 1em;
-		line-height: 1;
-		z-index: 2;
-		opacity: 0;
-		@include transition;
-		@include center;
-	}
-}
+// .archive.genesis-pro-portfolio .entry {
+// 	padding: 0;
+// 	@include overlay;
+// 	&:before {
+// 		opacity: 0.1;
+// 		border-radius: $site-radius;
+// 		@include transition;
+// 	}
+// 	&:hover {
+// 		box-shadow: 0 2rem 2rem -1rem rgba($dark,0.3);
+// 		transition: box-shadow $site-transition, transform $site-transition;
+// 		&:before,
+// 		.entry-title {
+// 			opacity: 1;
+// 		}
+// 		a {
+// 			color: $white;
+// 		}
+// 	}
+// 	a {
+// 		display: block;
+// 		position: relative;
+// 	}
+// 	img {
+// 		border-radius: $site-radius;
+// 	}
+// 	.entry-title {
+// 		text-align: center;
+// 		position: absolute;
+// 		font-family: $font-heading;
+// 		font-weight: $bolder;
+// 		font-size: 1.6rem;
+// 		color: $white;
+// 		height: 1em;
+// 		line-height: 1;
+// 		z-index: 2;
+// 		opacity: 0;
+// 		@include transition;
+// 		@include center;
+// 	}
+// }
 
 
 /* ### Masonry */
@@ -131,7 +131,7 @@
 .archive,
 .page-template-page_blog {
 	.site-inner {
-		background-color: $background;
+		background-color: $white;
 	}
 	.content {
 		display: flex;

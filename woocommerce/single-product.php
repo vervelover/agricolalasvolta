@@ -54,11 +54,150 @@ add_action( 'woocommerce_single_product_summary', 'genesis_do_post_title', 5 );
 
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_rating', 10 );
 
+// Remove single meta (categories, tags ect.)
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
+
 /* Share icons on product */
 
 add_action('woocommerce_share', 'ap_add_social_buttons' );
 function ap_add_social_buttons() {
     genesis_share_icon_output( 'header', array(  'facebook', 'googlePlus', 'pinterest' ) );
+}
+
+// Caratteristiche prodotto
+add_action( 'woocommerce_single_product_summary', 'ap_caratteristiche_prodotto', 50 );
+function ap_caratteristiche_prodotto() {
+	echo '<div class="caratteristiche-prodotto">';
+		if ( has_term( 'vini', 'product_cat' ) ) {
+			?>
+			<h6 class="caratteristiche-prodotto__title"><?php _e('Produzione:', 'business-pro'); ?></h6>
+			<p class="caratteristiche-prodotto__paragraph">
+				<?php 
+				if (get_field('bottiglie')) {
+					the_field('bottiglie');
+					echo ' ';
+					_e('bottiglie', 'business-pro');
+					echo ' <br/>';
+				}
+				if (get_field('eta_del_vigneto')) {
+					_e('Età del vigneto:', 'business-pro');
+					echo ' ';
+					the_field('eta_del_vigneto');
+					echo ' <br/>';
+				}
+				if (get_field('uve')) {
+					_e('Uve:', 'business-pro');
+					echo ' ';
+					the_field('uve');
+					echo ' <br/>';
+				}
+				if (get_field('metodo_di_raccolta')) {
+					_e('Metodo di raccolta:', 'business-pro');
+					echo ' ';
+					the_field('metodo_di_raccolta');
+					echo ' <br/>';
+				}
+				?>
+			</p>
+			<?php if(get_field('vinificazione')): ?>
+				<h6 class="caratteristiche-prodotto__title"><?php _e('Vinificazione:', 'business-pro'); ?></h6>
+				<p class="caratteristiche-prodotto__paragraph">
+					<?php the_field('vinificazione'); 
+					if (get_field('affinamento')) {
+						echo ' <br/>';
+						_e('Affinamento:', 'business-pro');
+						echo ' ';
+						the_field('affinamento');
+					}
+					?>
+				</p>
+			<?php endif; ?>
+			<?php if(get_field('note_organolettiche')): ?>
+				<h6 class="caratteristiche-prodotto__title"><?php _e('Note Organolettiche:', 'business-pro'); ?></h6>
+				<p class="caratteristiche-prodotto__paragraph">
+					<?php the_field('note_organolettiche'); ?>
+				</p>
+			<?php endif; ?>
+			<?php if(get_field('contenuto_alcolico')): ?>
+				<h6 class="caratteristiche-prodotto__title"><?php _e('Contenuto alcolico:', 'business-pro'); ?> <span style="font-weight:normal;"><?php the_field('contenuto_alcolico'); ?> %</span></h6>
+				<p class="caratteristiche-prodotto__paragraph">
+					<?php
+					if (get_field('temperatura_di_servizio')) {
+						_e('Temperatura di servizio consigliata:', 'business-pro');
+						echo ' ';
+						the_field('temperatura_di_servizio');
+						echo ' °C<br/>';
+					}
+					if (get_field('abbinamenti')) {
+						_e('Abbinamenti:', 'business-pro');
+						echo ' ';
+						the_field('abbinamenti');
+						echo ' <br/>';
+					}
+					?>
+				</p>
+			<?php endif; ?>
+			<?php
+		} else {
+			
+			if(get_field('esposizione_miele')): ?>
+				<h6 class="caratteristiche-prodotto__title"><?php _e('Esposizione:', 'business-pro'); ?></h6>
+				<p class="caratteristiche-prodotto__paragraph">
+					<?php the_field('esposizione_miele'); ?>
+				</p>
+			<?php endif;
+			if(get_field('altitudine_miele')): ?>
+				<h6 class="caratteristiche-prodotto__title"><?php _e('Altitudine:', 'business-pro'); ?></h6>
+				<p class="caratteristiche-prodotto__paragraph">
+					<?php the_field('altitudine_miele'); ?>
+				</p>
+			<?php endif;
+			if(get_field('odore')): ?>
+				<h6 class="caratteristiche-prodotto__title"><?php _e('Caratteristiche:', 'business-pro'); ?></h6>
+				<h6 class="caratteristiche-prodotto__title"><?php _e('Odore:', 'business-pro'); ?></h6>
+				<p class="caratteristiche-prodotto__paragraph">
+					<?php the_field('odore'); ?>
+				</p>
+			<?php endif;
+			if(get_field('sapore')): ?>
+				<h6 class="caratteristiche-prodotto__title"><?php _e('Sapore:', 'business-pro'); ?></h6>
+				<p class="caratteristiche-prodotto__paragraph">
+					<?php the_field('sapore'); ?>
+				</p>
+			<?php endif;
+			if(get_field('esposizione')): ?>
+				<h6 class="caratteristiche-prodotto__title"><?php _e('Esposizione:', 'business-pro'); ?></h6>
+				<p class="caratteristiche-prodotto__paragraph">
+					<?php the_field('esposizione'); ?>
+				</p>
+			<?php endif;
+			if(get_field('altitudine')): ?>
+				<h6 class="caratteristiche-prodotto__title"><?php _e('Altitudine:', 'business-pro'); ?></h6>
+				<p class="caratteristiche-prodotto__paragraph">
+					<?php the_field('altitudine'); ?>
+				</p>
+			<?php endif;
+			if(get_field('olive')): ?>
+				<h6 class="caratteristiche-prodotto__title"><?php _e('Olive:', 'business-pro'); ?></h6>
+				<p class="caratteristiche-prodotto__paragraph">
+					<?php the_field('olive'); ?>
+				</p>
+			<?php endif;
+			if(get_field('raccolta_olive')): ?>
+				<h6 class="caratteristiche-prodotto__title"><?php _e('Raccolta olive:', 'business-pro'); ?></h6>
+				<p class="caratteristiche-prodotto__paragraph">
+					<?php the_field('raccolta_olive'); ?>
+				</p>
+			<?php endif;
+			if(get_field('frangitura')): ?>
+				<h6 class="caratteristiche-prodotto__title"><?php _e('Frangitura:', 'business-pro'); ?></h6>
+				<p class="caratteristiche-prodotto__paragraph">
+					<?php the_field('frangitura'); ?>
+				</p>
+			<?php endif;
+
+		}
+	echo '</div>';
 }
 
 add_action( 'genesis_loop', 'gencwooc_single_product_loop' );

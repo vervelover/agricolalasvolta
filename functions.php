@@ -270,21 +270,72 @@ add_filter('woocommerce_style_smallscreen_breakpoint', 'ap_filter_woocommerce_st
 /* Gallery Thumbnails Sizes */
 
 add_filter('woocommerce_get_image_size_gallery_thumbnail', function ($size) {
-		return array(
-			'width'  => 206,
-			'height' => 206,
-			'crop'   => 1,
-		);
-	});
+	return array(
+		'width'  => 206,
+		'height' => 206,
+		'crop'   => 1,
+	);
+});
 
+// Cart and Search in main menu
+add_filter('wp_nav_menu_items', 'ap_add_search_and_cart_to_menu', 10, 2);
+function ap_add_search_and_cart_to_menu($items, $args) {
+
+	global $woocommerce;
+
+	$cart_item = array(
+		'cart_url'            => wc_get_cart_url(),
+		'cart_contents_count' => $woocommerce->cart->get_cart_contents_count(),
+		'cart_total'          => WC()->cart->get_cart_total(),
+		'cart_name'           => __('', 'business-pro'),
+	);
+
+	if ($args->theme_location == 'primary' && !is_cart()) {
+
+		$items .= "<li class='menu-item header-cart-menu'><a class='cart-contents' href='".$cart_item['cart_url']."'><i class='fa fa-shopping-cart'></i><span class='cart-count'>".$cart_item['cart_contents_count']."</span>".$cart_item['cart_name']."</a></li>";
+
+	} else if ($args->theme_location == 'primary' && is_cart()) {
+
+		return $items;
+
+	}
+
+	return $items;
+}
+
+add_filter( 'woocommerce_add_to_cart_fragments', 'woocommerce_header_add_to_cart_fragment' );
+function woocommerce_header_add_to_cart_fragment( $fragments ) {
+	global $woocommerce;
+	ob_start();
+
+	?>
+	<a class="cart-contents" href="<?php echo $woocommerce->cart->get_cart_url(); ?>"><i class="fa fa-shopping-cart"></i><span class="cart-count"><?php echo $woocommerce->cart->cart_contents_count; ?></span></a>
+	<?php
+
+	$fragments['a.cart-contents'] = ob_get_clean();
+	return $fragments;
+}
+
+// Custom breadcrumbs
+add_filter( 'genesis_breadcrumb_args', 'ap_custom_breadcrumb_args' );
+function ap_custom_breadcrumb_args( $args ) {
+	$args['home'] = '<i class="fa fa-home"></i>';   // Home Page
+	$args['sep'] = '&nbsp;  &#10146; &nbsp;';  // My favorite arrow
+	$args['list_sep'] = ', '; 
+	$args['prefix'] = '<div class="breadcrumb">';
+	$args['suffix'] = '</div>';
+	$args['heirarchial_attachments'] = true; 
+	$args['heirarchial_categories'] = true; 
+	$args['display'] = true;
+	$args['labels']['prefix'] = '';
+	return $args;
+}
 // Customize Footer Text
 
 remove_action('genesis_footer', 'genesis_do_footer');
 add_action('genesis_footer', 'ap_custom_footer');
 function ap_custom_footer() {
 	?>
-				<p><a href="<?php site_url();?>">Manfredi Style</a> &copy;
-			 Copyright <?php echo date('Y');
-	?>Manfredi Style Singapore Pte. Ltd. (Holding Company) Reg 201610326W / International Visionary Excellence Srl - P.Iva: 02329120972</p>
+	<p>Copyright &copy; <?php echo date('Y'); ?> <a href="<?php site_url();?>">Agricola La Svolta</a> - via Gavignano 7 Lastra a Signa (FI) - P.Iva:</p>
 	<?php
 }
