@@ -40,7 +40,7 @@
         span.price {
             font-family: $font-body;
             font-size: 1.4em;
-            margin-bottom: 1rem;
+            margin-bottom: 2.3rem;
             color: $gray;
             line-height: 1.5;
             float: left;
@@ -55,22 +55,33 @@
             clear: both;
             padding: 1em 0 0;
             .variations {
+                margin-bottom: 0;
                 table-layout: fixed;
+                tr {
+                    display: flex;
+                }
+                tbody {
+                    border-bottom: none;
+                }
             }
+           .reset_variations {
+                display: none !important;
+           }
         }
         .related.products {
             float: left;
             display: block;
+            width: 100%;
             li.product {
                 box-shadow: none;
                 &:hover {
-                    box-shadow: 0 2rem 2rem 1rem rgba($dark,0.3);
+                    box-shadow: $box-shadow;
                     transition: $site-transition;
                 }
             }
             h2:first-child {
                 text-align: center;
-                margin: 4rem auto 6rem;
+                margin: 5rem auto 1rem;
             }
         }
     }
@@ -82,7 +93,7 @@
         display: block;
     }
     .woocommerce-variation-price {
-        margin-bottom: 20px;
+        // margin-bottom: 20px;
     }
     .woocommerce-product-details__short-description {
         @include clearfix;
@@ -93,6 +104,9 @@
 /* ### WooCommerce Product Tabs */
 
 .woocommerce div.product .woocommerce-tabs {
+
+    border-top: 1px solid $light;
+    padding-top: 3rem;
 
     h2 {
         display: none;

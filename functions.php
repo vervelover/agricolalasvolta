@@ -22,7 +22,7 @@ include_once (get_template_directory().'/lib/init.php');
 // Define theme constants.
 define('CHILD_THEME_NAME', 'Business Pro Theme');
 define('CHILD_THEME_URL', 'https://seothemes.com/themes/business-pro');
-define('CHILD_THEME_VERSION', '1.0.5.2018-08-08-a01'.time());
+define('CHILD_THEME_VERSION', '1.0.5.2018-08-08-a05');
 
 // Set Localization (do not remove).
 load_child_theme_textdomain('business-pro-theme', apply_filters('child_theme_textdomain', get_stylesheet_directory().'/languages', 'business-pro-theme'));
@@ -259,6 +259,17 @@ include_once (get_stylesheet_directory().'/includes/defaults.php');
 
 // Load theme's recommended plugins.
 include_once (get_stylesheet_directory().'/includes/plugins.php');
+
+// Load shipping rates by weight
+include_once (get_stylesheet_directory().'/includes/shipping.php');
+
+// Hide admin bar for non admins
+add_action('after_setup_theme', 'ap_hide_admin_bar');
+function ap_hide_admin_bar() {
+	if (!current_user_can('edit_posts')) {
+  		add_filter( 'show_admin_bar', '__return_false', PHP_INT_MAX );
+	}
+}
 
 // Modify woocommerce smallscreen breakpoint
 function ap_filter_woocommerce_style_smallscreen_breakpoint($breakpoint) {

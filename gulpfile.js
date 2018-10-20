@@ -88,7 +88,7 @@ gulp.task('woo', function () {
 
 		// Process sass
 		.pipe(sass({
-			outputStyle: 'expanded'
+			outputStyle: 'compressed'
 		}))
 
 		// Pixel fallbacks for rem units.
@@ -150,7 +150,7 @@ gulp.task('styles', function () {
 
 		// Process sass
 		.pipe(sass({
-			outputStyle: 'expanded'
+			outputStyle: 'compressed'
 		}))
 
 		// Pixel fallbacks for rem units.

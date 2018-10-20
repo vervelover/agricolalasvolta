@@ -182,7 +182,7 @@ h6 {
 input,
 select,
 textarea {
-    background-color: $white;
+    background-color: rgba($light, .2);
     border: $site-border;
     border-radius: $site-radius;
     padding: 0.5em 1em;

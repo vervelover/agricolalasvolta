@@ -61,7 +61,7 @@ remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_singl
 
 add_action('woocommerce_share', 'ap_add_social_buttons' );
 function ap_add_social_buttons() {
-    genesis_share_icon_output( 'header', array(  'facebook', 'googlePlus', 'pinterest' ) );
+    genesis_share_icon_output( 'header', array(  'facebook', 'pinterest' ) );
 }
 
 // Caratteristiche prodotto
