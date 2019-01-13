@@ -60,10 +60,10 @@ if ( is_active_sidebar( 'front-page-1' ) ||
 		) );
 
 		// Front page 2 widget area.
-		/*genesis_widget_area( 'front-page-2', array(
+		genesis_widget_area( 'front-page-2', array(
 			'before' => '<div class="front-page-2 widget-area"><div class="wrap">',
 			'after'  => '</div></div>',
-		) );*/
+		) );
 
 		// Front page 3 widget area.
 		/*genesis_widget_area( 'front-page-3', array(
